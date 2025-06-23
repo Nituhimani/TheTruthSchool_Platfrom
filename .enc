@@ -1,0 +1,33 @@
+# Database
+DATABASE_URL="postgresql://dev:dev@localhost:5432/thetruthschool"
+
+# Authentication
+NEXTAUTH_URL="http://localhost:3000"
+NEXTAUTH_SECRET="your-secret-key-here"
+
+# OAuth Providers
+GOOGLE_CLIENT_ID="your-google-client-id"
+GOOGLE_CLIENT_SECRET="your-google-client-secret"
+
+# AI Services
+OPENAI_API_KEY="your-openai-api-key"
+
+# LiveKit (Voice)
+LIVEKIT_API_KEY="your-livekit-api-key"
+LIVEKIT_API_SECRET="your-livekit-api-secret"
+LIVEKIT_URL="wss://your-livekit-instance.livekit.cloud"
+
+# Judge0 (Code Execution)
+JUDGE0_URL="https://judge0-ce.p.rapidapi.com"
+JUDGE0_API_KEY="your-rapidapi-key"
+
+# Storage
+CLOUDFLARE_R2_ACCESS_KEY_ID="your-r2-access-key"
+CLOUDFLARE_R2_SECRET_ACCESS_KEY="your-r2-secret-key"
+CLOUDFLARE_R2_BUCKET_NAME="thetruthschool-files"
+
+# Monitoring
+SENTRY_DSN="your-sentry-dsn"
+
+# Development
+NODE_ENV="development"

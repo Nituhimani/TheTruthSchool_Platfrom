@@ -1,0 +1,85 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.4.1/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"complexity": {
+				"noBannedTypes": "error",
+				"noUselessTypeConstraint": "error"
+			},
+			"correctness": {
+				"noConstAssign": "error",
+				"noGlobalObjectCalls": "error",
+				"noInvalidConstructorSuper": "error",
+				"noNewSymbol": "error",
+				"noSetterReturn": "error",
+				"noUndeclaredVariables": "error",
+				"noUnreachable": "warn",
+				"noUnusedLabels": "error",
+				"noUnusedVariables": "warn",
+				"useIsNan": "error",
+				"useValidForDirection": "error",
+				"useYield": "error"
+			},
+			"style": {
+				"noNamespace": "error",
+				"useAsConstAssertion": "error",
+				"useBlockStatements": "off",
+				"useCollapsedElseIf": "warn",
+				"useFragmentSyntax": "warn"
+			},
+			"suspicious": {
+				"noArrayIndexKey": "warn",
+				"noAsyncPromiseExecutor": "error",
+				"noCatchAssign": "error",
+				"noClassAssign": "error",
+				"noCompareNegZero": "error",
+				"noControlCharactersInRegex": "error",
+				"noDebugger": "warn",
+				"noDuplicateCase": "error",
+				"noDuplicateClassMembers": "error",
+				"noDuplicateObjectKeys": "error",
+				"noDuplicateParameters": "error",
+				"noExplicitAny": "warn",
+				"noExtraNonNullAssertion": "error",
+				"noUnsafeDeclarationMerging": "error",
+				"noUnsafeNegation": "error",
+				"useGetterReturn": "error",
+				"useValidTypeof": "error"
+			},
+			"security": {
+				"noDangerouslySetInnerHtml": "warn"
+			},
+			"nursery": {
+				"noUnusedImports": "error"
+			}
+		}
+	},
+	"formatter": {
+		"enabled": true,
+		"formatWithErrors": false,
+		"indentStyle": "space",
+		"indentWidth": 2,
+		"lineEnding": "lf",
+		"lineWidth": 100
+	},
+	"javascript": {
+		"formatter": {
+			"jsxQuoteStyle": "double",
+			"quoteProperties": "asNeeded",
+			"trailingComma": "es5",
+			"semicolons": "always",
+			"arrowParentheses": "always",
+			"bracketSpacing": true,
+			"bracketSameLine": false,
+			"quoteStyle": "double"
+		}
+	},
+	"files": {
+		"ignore": ["node_modules", "dist", "build", ".next", "coverage", "*.d.ts"]
+	}
+}

@@ -1,8 +1,25 @@
 {
-  "extends": "@repo/typescript-config/react-library.json",
+  "extends": "@thetruthschool/tsconfig/base.json",
   "compilerOptions": {
-    "outDir": "dist"
+    "jsx": "react-jsx",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "ES6"
+    ],
+    "types": [
+      "react",
+      "react-dom"
+    ],
+    "declaration": true,
+    "outDir": "dist",
+    "rootDir": "src"
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
 }

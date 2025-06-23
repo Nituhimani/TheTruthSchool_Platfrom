@@ -1,0 +1,7 @@
+{
+	"extends": ["@thetruthschool/biome-config"],
+	"files": {
+		"include": ["src/**/*", "app/**/*", "pages/**/*", "components/**/*"],
+		"ignore": [".next/**/*", "dist/**/*", "node_modules/**/*"]
+	}
+}
